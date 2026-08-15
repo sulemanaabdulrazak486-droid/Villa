@@ -58,8 +58,7 @@ humanizeButton.addEventListener("click", async function () {
 
     try {
 
-        const response = await fetch("/humanize", {
-
+        const response = await fetch("https://villa-production-553c.up.railway.app/humanize", {
             method: "POST",
 
             headers: {
