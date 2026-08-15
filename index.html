@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Villa AI Humanizer</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="header">
+
+        <div class="logo">
+            Villa AI
+        </div>
+
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">How It Works</a>
+            <a href="#">About</a>
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <section class="hero">
+
+            <h1>Villa AI Humanizer</h1>
+
+            <p>
+                Transform AI-generated content into natural,
+                engaging and human-like writing.
+            </p>
+
+        </section>
+
+
+        <section class="humanizer-card">
+
+            <div class="input-section">
+
+                <h2>Your Text</h2>
+
+                <textarea
+                    id="textInput"
+                    placeholder="Paste or type your text here..."
+                ></textarea>
+
+
+                <div class="humanization-options">
+
+                    <label for="humanizationLevel">
+                        Humanization Level
+                    </label>
+
+                    <select id="humanizationLevel">
+
+                        <option value="light">
+                            Light
+                        </option>
+
+                        <option value="standard" selected>
+                            Standard
+                        </option>
+
+                        <option value="strong">
+                            Strong
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="humanization-options">
+
+                    <label for="writingTone">
+                        Writing Tone
+                    </label>
+
+                    <select id="writingTone">
+
+                        <option value="professional">
+                            Professional
+                        </option>
+
+                        <option value="casual">
+                            Casual
+                        </option>
+
+                        <option value="academic">
+                            Academic
+                        </option>
+
+                        <option value="friendly">
+                            Friendly
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="text-info">
+	<span>
+    Words: <strong id="wordCount">0</strong>
+</span>
+
+<span>
+    Characters: <strong id="characterCount">0</strong>
+</span>
+                   
+                    <button id="clearButton">
+                        Clear
+                    </button>
+
+                </div>
+
+      
+           <button
+                id="humanizeButton"
+                class="humanize-button"
+            >
+                Humanize Text
+            </button>
+
+
+            <div class="output-section">
+
+                <h2>Humanized Text</h2>
+
+                <div
+                    id="outputText"
+                    class="output-box"
+                >
+                    Your humanized text will appear here.
+                </div>
+
+                <button
+                    id="copyButton"
+                    class="copy-button"
+                >
+                    Copy Text
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            © 2026 Villa AI. All rights reserved.
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
